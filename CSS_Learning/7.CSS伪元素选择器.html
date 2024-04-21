@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS伪元素选择器</title>
+    <style>
+        div::first-letter {
+            color: brown;
+            font-size: 40px;
+        }
+
+        div::first-line {
+            background-color: blue;
+        }
+
+        div::selection {
+            background-color: rgb(0, 0, 0);
+            color: #ffffff;
+        }
+
+        input::placeholder {
+            color: cyan;
+        }
+
+        p::before {
+            content: "$";
+        }
+
+        p::after {
+            content: ".00";
+        }
+    </style>
+</head>
+
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur.</div>
+    <br>
+    <input type="text" placeholder="请输入用户名">
+    <br>
+    <p>199</p>
+    <p>299</p>
+    <p>399</p>
+    <p>499</p>
+    <p>599</p>
+</body>
+
+</html>

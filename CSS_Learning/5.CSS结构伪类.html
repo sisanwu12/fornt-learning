@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS结构伪类选择器</title>
+    <style>
+        div>p:first-child {
+            color: red;
+        }
+
+        div>p:first-of-type {
+            color: #0700cd;
+        }
+
+        div>p:not(.fail) {
+            color: #8400ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>666</span>
+        <p>赵六: 99分</p>
+        <p>李四: 98分</p>
+        <p class="fail">王五: 97分</p>
+    </div>
+</body>
+
+</html>

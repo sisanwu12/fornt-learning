@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS动态伪类选择器</title>
+    <style>
+        /* 没有访问过的a元素 */
+        a:link {
+            color: aquamarine;
+        }
+
+        /* 访问过的a元素 */
+        a:visited {
+            color: #1db722;
+        }
+
+        /* 鼠标悬浮的a元素 */
+        a:hover {
+            color: #46918d;
+        }
+
+        /* 激活的a元素 */
+        a:active {
+            color: #d34f34;
+        }
+
+        span:hover {
+            color: #46918d;
+        }
+
+        span:active {
+            color: #d34f34;
+        }
+
+        input:focus {
+            color: #103a4e;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.baidu.com">去百度</a>
+    <br>
+    <a href="https://www.jd.com">去京东</a>
+    <br>
+    <span>666</span>
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+</body>
+
+</html>

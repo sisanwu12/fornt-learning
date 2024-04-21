@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+
+<body>
+    <form action="https://www.baidu.com/s" target="_blank">
+        <input type="text" name="wd">
+        <button>百度搜索</button>
+    </form>
+    <hr>
+    <form action="https://search.jd.com/search">
+        <input type="text" name="keyword">
+        <button>京东</button>
+    </form>
+    <hr>
+    <form action="https://search.jd.com/search">
+        <fieldset>
+            <legend>主要信息</legend>
+            <label>
+                账户：
+                <input disabled type="text" name="account" value="account" maxlength="10"><br>
+            </label>
+            <!-- disable：禁用表单控件 -->
+            <label for="mm">密码：</label>
+            <input id="mm" type="password" name="password" maxlength="20"><br>
+            性别：
+            <input type="radio" name="gender" value="male" checked id="nan">
+            <label for="nan">男</label>
+            <input type="radio" name="gender" value="female" id="nv">
+            <label for="nv">女</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>附加信息</legend>
+            爱好：
+            <label><input type="checkbox" name="hobby" value="smoke">抽烟</label>
+            <label><input type="checkbox" name="hobby" value="drink" checked>喝酒</label>
+            <label><input type="checkbox" name="hobby" value="perm">烫头</label>
+            <br>
+            其他：
+            <textarea name="other" cols="23" rows="3"></textarea>
+            <br>
+            籍贯：
+            <select name="place">
+                <option value="冀">河北</option>
+                <option value="鲁" selected>山东</option>
+                <option value="粤">广东</option>
+            </select>
+        </fieldset>
+        <br>
+        <!-- 隐藏域 -->
+        <input type="hidden" name="abc" value="123">
+        <br>
+        <input type="submit" value="确认">
+        <input type="reset" value="重置">
+        <button type="button">检测账户是否被注册</button>
+        <br>
+    </form>
+</body>
+
+</html>
