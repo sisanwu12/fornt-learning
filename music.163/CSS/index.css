@@ -9,6 +9,11 @@
     padding: 0;
     text-decoration: none;
     list-style-type: none;
+    border-collapse: collapse;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 body {
@@ -420,7 +425,7 @@ i {
 
 /* #endregion轮播图end */
 
-/* #region主界面star */
+/* #region主界面左star */
 .main {
     width: 1100px;
     margin: 0 auto;
@@ -430,6 +435,7 @@ i {
 
 .leftm {
     width: 815px;
+    border-right: 2px solid #7b79795e;
 }
 
 .leftbody {
@@ -554,7 +560,148 @@ i {
     margin: 90px 10px;
 }
 
-/* #endregion主界面end */
+#bdl{
+    height: 460px;
+    width: 770px;
+    margin-top: 20px;
+}
 
+#bdl .bd{
+    border: 1px solid #9f9f9f86;
+    width: 254px;
+    height: 460px;
+}
 
-/* #endregion左侧热门推荐end */
+#bdl .bd .bdt{
+    height: 130px;
+    background-color: #c5c2c22a;
+    padding: 20px 0 0 19px;
+}
+
+#bdl .bd .bdt img{
+    width: 90px;
+}
+
+#bdl .bd .bdt a{
+    color: #000;
+    font-size: 16px;
+    padding: 10px 0 0 10px;
+}
+
+#bdl .bd ol li {
+    height: 28px;
+    line-height: 28px;
+    background-color: #78787822;
+}
+
+#bdl .bd ol li:nth-child(2n+1){
+    background-color: #33333322;
+}
+
+#bdl .bd ol li a{
+    color: #000;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+#bdl .bd ol li p{
+    color: #000;
+    font-size: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.visitall{
+    color: #000;
+    height: 30px;
+    margin-right: 30px;
+}
+
+/* #endregion主界面左end */
+
+/* #region主界面右star */
+.rightm{
+    width: 283px;
+    position: relative;
+
+}
+
+.rightbody img{
+    width: 283px;
+}
+
+.n-singer h3{
+    height: 23px;
+    margin: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.n-singer h3 span{
+    font-size: 14px;
+    color: #242424;
+}
+
+.n-singer h3 a{
+    color: #3333336e;
+}
+
+.n-singer ul{
+    margin: 6px 0 14px 20px;
+}
+
+.n-singer ul li{
+    margin-top: 14px;
+    height: 60px;
+    background-color: #b5b5b52b;
+    border: 1px solid #82828236;
+}
+
+.n-singer ul li:hover{
+    background-color: #b5b5b554;
+}
+
+.n-singer ul li img{
+    width: 60px;
+}
+
+.n-singer ul li h4{
+    color: #000;
+    font-size: 16px;
+    padding: 5px 0px 5px 75px;
+}
+
+.n-singer ul li p{
+    padding: 15px 0px 5px 75px;
+}
+
+.n-singer .apply{
+    width: 220px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin: 0 auto;
+    border: 2px solid #4f4f4f5a;
+}
+
+.n-singer .apply:hover{
+    background-color: #fcfcfc;
+}
+
+.n-singer .apply a{
+    color: #242424;
+}
+
+.hotZB h4{
+    margin: 30px 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #242424;
+}
+
+.hotZB img{
+    width: 243px;
+    margin: 20px;
+}
+
+/* #endregion主界面右end */
