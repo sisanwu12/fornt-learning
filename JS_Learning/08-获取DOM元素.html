@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 选择第一个css选择器
+        const box1 = document.querySelector("div")
+        const box2 = document.querySelector(".box")
+        // 选择css选择器所选的全部
+        const list_box = document.querySelectorAll('div')
+        for (let i = 0; i < list_box.length; i++) {
+            console.log(list_box[i])
+        }
+    </script>
+</body>
+
+</html>

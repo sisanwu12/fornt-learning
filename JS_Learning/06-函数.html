@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function add(num1 = 0, num2 = 0) {
+            return num1 + num2
+        }
+        let fn = function (x, y) {
+            return x + y
+        }
+            (function (x, y) {
+                let num = 20
+                console.log(x + y + num)
+            })(1, 2);  // 分号不可省
+        (function (x, y) {
+            let num = 10
+            console.log(x + y + num)
+        });
+    </script>
+</body>
+
+</html>
