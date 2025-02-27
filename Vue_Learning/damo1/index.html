@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创建vue实例，初始化渲染</title>
+</head>
+<body>
+    <!-- 1. 准备容器 -->
+    <div id="app">
+        {{message}}
+    </div>
+    <!-- 2. 引入核心包 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- 3. 创建实例 -->
+    <script>
+        // 一但引入vueJS核心包，在全局环境就有了vue构造函数
+        const app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue!'
+            }
+        })
+    </script>
+    <!-- 4. 添加配置项 -->
+
+
+</body>
+</html>

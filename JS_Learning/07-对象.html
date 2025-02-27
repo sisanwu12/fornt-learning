@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let obj = {
+            // 属性
+            uname: 'abc',
+            age: 18,
+            gender: '男',
+            // 方法
+            sayhello: function () {
+                console.log('hello')
+            }
+        }
+        // 查：对象名.属性 || 对象名['属性名']
+        // 改：对象名.属性 = 值
+        obj.age = 20
+        // 新增：对象名.新属性
+        obj.height = 180
+        for (let i in obj) {
+            console.log(i);
+            console.log(obj[i])
+        }
+        // 删：delete 对象名.属性
+        delete obj.uname
+        for (let i in obj) {
+            console.log(i);
+            console.log(obj[i])
+        }
+        // 内置对象：Math
+        // 属性
+        console.log(Math.PI)
+        // 方法
+        // ceil(num)：求num向上取整后的整数
+        console.log(Math.ceil(1.1))
+        // floor(num)：求num向下取整后的整数
+        console.log(Math.floor(1.9))
+        // round(num)：求num四舍五入后的整数
+        console.log(Math.round(1.2))
+        console.log(Math.round(1.6))
+        // pow(a, n)：求 a 的 n 次方
+        console.log(Math.pow(2, 3))
+        // sqrt(num)：求num的平方根
+        console.log(Math.sqrt(16))
+        // random()：返回一个[0,1)直之间的一个随机小数
+        console.log(Math.random())
+        // [0, n]之间的一个随机整数：Math.floor(Math.random() * (n + 1))
+        Math.floor(Math.random() * (10 + 1))
+        // [a, b]之间的一个随机整数：Math.floor(Math.random() * (b - a + 1)) + a || random(a, b)
+        Math.floor(Math.random() * (100 - 15 + 1)) + 15
+        Math.random(15, 100)
+
+    </script>
+</body>
+
+</html>
